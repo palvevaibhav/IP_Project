@@ -1,0 +1,412 @@
+[
+  {
+    "source": "MUMBRLB1CSR001",
+    "target": "MUMBRLB1CCR001",
+    "interface": "BE1"
+  },
+  {
+    "source": "MUMBRLB1CSR001",
+    "target": "MUMBRLB2CCR001",
+    "interface": "BE2"
+  },
+  {
+    "source": "MUMBRLB1CSR001",
+    "target": "MUMBRLB1CSR002",
+    "interface": "BE7"
+  },
+  {
+    "source": "MUMBRLB1CSR001",
+    "target": "MUMBRLB1URR001",
+    "interface": "Te0/4/0/9"
+  },
+  {
+    "source": "MUMBRLB1CSR001",
+    "target": "MUMBRLB1CRR001",
+    "interface": "Te0/4/0/11"
+  },
+  {
+    "source": "MUMBRLB1CSR001",
+    "target": "MUMBRLB1IRR001",
+
+    "interface": "Te0/4/0/7"
+  },
+  {
+    "source": "MUMBRLB2CCR001",
+    "target": "MUMBRLB1CCR001",
+
+    "interface": "BE912"
+  },
+  {
+    "source": "MUMBRLB2CCR001",
+    "target": "MUMBRLB1AAR001",
+
+    "interface": "BE703"
+  },
+  {
+    "source": "MUMBRLB2CCR001",
+    "target": "MUMBRLB2AAR001",
+    "interface": "BE704"
+  },
+  {
+    "source": "MUMBRLB2CCR001",
+    "target": "MUMBRLB1IAR002",
+    "interface": "BE222"
+  },
+  {
+    "source": "MUMBRLB2CCR001",
+    "target": "MUMBRLB1CSR002",
+    "interface": "BE5"
+  },
+  {
+    "source": "MUMBRLB2CCR001",
+    "target": "MUMBRLB1IAR001",
+    "interface": "BE111"
+  },
+  {
+    "source": "MUMBRLB2CCR001",
+    "target": "MUMBRLB1CSR001",
+    "interface": "BE4"
+  },
+  {
+    "source": "MUMBRLB2CCR001",
+    "target": "BGLRRLABCCR002",
+    "interface": "BE801"
+  },
+  {
+    "source": "MUMBRLB2CCR001",
+    "target": "MUMBRLB1CSR005",
+    "interface": "Te0/1/0/5"
+  },
+  {
+    "source": "MUMBRLB2CCR001",
+    "target": "MUMBRLB1CSR006",
+    "interface": "Te0/1/0/7"
+  },
+  {
+    "source": "MUMBRLB2CCR001",
+    "target": "MUMBRLB1IAR001",
+    "interface": "BE111.5"
+  },
+  {
+    "source": "MUMBRLB2CCR001",
+    "target": "BGLRRLABCCR002",
+    "interface": "BE801.5"
+  },
+  {
+    "source": "MUMBRLB1IAR001",
+    "target": "MUMBRLB1CCR001",
+    "interface": "BE1"
+  },
+  {
+    "source": "MUMBRLB1IAR001",
+    "target": "MUMBRLB2CCR001",
+    "interface": "BE111"
+  },
+  {
+    "source": "MUMBRLB1IAR001",
+    "target": "MUMBMUMBICR001",
+    "interface": "BE200"
+  },
+  {
+    "source": "MUMBRLB1IAR001",
+    "target": "MUMBMUMBWRR001",
+    "interface": "Te0/1/0/2"
+  },
+  {
+    "source": "MUMBRLB1IAR001",
+    "target": "NVMBNVMBICR001",
+    "interface": "BE201"
+  },
+  {
+    "source": "MUMBRLB1IAR001",
+    "target": "MUMBRLB1CCR001",
+    "interface": "BE1.5"
+  },
+  {
+    "source": "MUMBRLB1IAR001",
+    "target": "MUMBRLB2CCR001",
+    "interface": "BE111.5"
+  },
+  {
+    "source": "MUMBRLB1CCR001",
+    "target": "MUMBRLB1AAR001",
+    "interface": "BE701"
+  },
+  {
+    "source": "MUMBRLB1CCR001",
+    "target": "MUMBRLB2CCR001",
+    "interface": "BE912"
+  },
+  {
+    "source": "MUMBRLB1CCR001",
+    "target": "MUMBRLB2AAR001",
+    "interface": "BE702"
+  },
+  {
+    "source": "MUMBRLB1CCR001",
+    "target": "MUMBRLB1CSR002",
+    "interface": "BE2"
+  },
+  {
+    "source": "MUMBRLB1CCR001",
+    "target": "MUMBRLB1IAR001",
+    "interface": "BE3"
+  },
+  {
+    "source": "MUMBRLB1CCR001",
+    "target": "MUMBRLB1CSR001",
+    "interface": "BE1"
+  },
+  {
+    "source": "MUMBRLB1CCR001",
+    "target": "BGLRRLABCCR001",
+    "interface": "BE911"
+  },
+  {
+    "source": "MUMBRLB1CCR001",
+    "target": "MUMBRLB1CSR005",
+    "interface": "Te0/2/0/0"
+  },
+  {
+    "source": "MUMBRLB1CCR001",
+    "target": "MUMBRLB1CSR006",
+    "interface": "Te0/2/0/1"
+  },
+  {
+    "source": "MUMBRLB1CCR001",
+    "target": "MUMBRLB1IAR001",
+    "interface": "BE3.5"
+  },
+  {
+    "source": "MUMBRLB1CCR001",
+    "target": "BGLRRLABCCR001",
+    "interface": "BE911.5"
+  },
+  {
+    "source": "BGLRRLABCCR001",
+    "target": "BGLRRLABAAR003",
+    "interface": "BE801"
+  },
+  {
+    "source": "BGLRRLABCCR001",
+    "target": "BGLRRLABAAR002",
+
+    "interface": "BE702"
+  },
+  {
+    "source": "BGLRRLABCCR001",
+    "target": "BGLRRLABAAR001",
+
+    "interface": "BE701"
+  },
+  {
+    "source": "BGLRRLABCCR001",
+    "target": "MUMBRLB1CCR001",
+    "interface": "BE911"
+  },
+  {
+    "source": "BGLRRLABCCR001",
+    "target": "MUMBMUMBISR001",
+    "interface": "BE200"
+  },
+  {
+    "source": "BGLRRLABCCR001",
+    "target": "BGLRRLABCSR002",
+    "interface": "BE5"
+  },
+  {
+    "source": "BGLRRLABCCR001",
+    "target": "BGLRRLABCSR001",
+
+    "interface": "BE4"
+  },
+  {
+    "source": "BGLRRLABCCR001",
+    "target": "OcNOS",
+    "interface": "BE11"
+  },
+  {
+    "source": "BGLRRLABCCR001",
+    "target": "MUMBRLB1CCR001",
+    "interface": "BE911.5"
+  },
+  {
+    "source": "MUMBRLB1CSR002",
+    "target": "MUMBRLB1CCR001",
+    "interface": "BE1"
+  },
+  {
+    "source": "MUMBRLB1CSR002",
+    "target": "MUMBRLB2CCR001",
+    "interface": "BE2"
+  },
+  {
+    "source": "MUMBRLB1CSR002",
+    "target": "MUMBRLB1URR001",
+    "interface": "Te0/1/0/11"
+  },
+  {
+    "source": "MUMBRLB1CSR002",
+    "target": "MUMBRLB1CSR001",
+    "interface": "BE7"
+  },
+  {
+    "source": "MUMBRLB1CSR002",
+    "target": "MUMBRLB1IRR001",
+    "interface": "Te0/1/0/9"
+  },
+  {
+    "source": "NVMBNVMBICR001",
+    "target": "MUMBBIDCICR002",
+    "interface": "BE200"
+  },
+  {
+    "source": "NVMBNVMBICR001",
+    "target": "BGLRRLABAAR004",
+    "interface": "BE6"
+  },
+  {
+    "source": "NVMBNVMBICR001",
+    "target": "BGLRRLABAAR003",
+    "interface": "BE5"
+  },
+  {
+    "source": "NVMBNVMBICR001",
+    "target": "BGLRRLABAAR002",
+    "interface": "BE21"
+  },
+  {
+    "source": "NVMBNVMBICR001",
+    "target": "MUMBMUMBICR001",
+    "interface": "BE127"
+  },
+  {
+    "source": "NVMBNVMBICR001",
+    "target": "MUMBMUMBISR001",
+    "interface": "BE40"
+  },
+  {
+    "source": "NVMBNVMBICR001",
+    "target": "MUMBRLB1IAR001",
+    "interface": "BE4"
+  },
+  {
+    "source": "NVMBNVMBICR001",
+    "target": "MUMBRLB1IAR002",
+    "interface": "BE3"
+  },
+  {
+    "source": "BGLRRLABCSR002",
+    "target": "BGLRRLABURR001",
+    "interface": "Te0/2/0/7"
+  },
+  {
+    "source": "BGLRRLABCSR002",
+    "target": "BGLRRLABCCR002",
+    "interface": "BE2"
+  },
+  {
+    "source": "BGLRRLABCSR002",
+    "target": "BGLRRLABCSR001",
+
+    "interface": "BE14"
+  },
+  {
+    "source": "BGLRRLABCSR002",
+    "target": "BGLRRLABCCR001",
+    "interface": "BE1"
+  },
+  {
+    "source": "BGLRRLABCSR002",
+    "target": "BGLRRLABVRR002",
+    "interface": "Te0/2/1/9"
+  },
+  {
+    "source": "BGLRRLABCSR002",
+    "target": "BGLRRLABCCR002",
+    "interface": "BE2.5"
+  },
+  {
+    "source": "BGLRRLABVRR002",
+    "target": "BGLRRLABCSR002",
+
+    "interface": "TF0/0/0/2"
+  },
+  {
+    "source": "BGLRRLABVRR002",
+    "target": "BGLRRLABCSR001",
+
+    "interface": "TF0/0/0/3"
+  },
+  {
+    "source": "MUMBBIDCICR001",
+    "target": "MUMBBIDCICR002",
+    "interface": "BE250"
+  },
+  {
+    "source": "MUMBBIDCICR001",
+    "target": "MUMBMUMBICR002",
+    "interface": "BE130"
+  },
+  {
+    "source": "MUMBBIDCICR001",
+    "target": "MUMBMUMBICR001",
+    "interface": "BE128"
+  },
+  {
+    "source": "MUMBBIDCICR001",
+    "target": "MUMBMUMBISR001",
+    "interface": "BE150"
+  },
+  {
+    "source": "MUMBMUMBISR001",
+    "target": "BGLRRLABCCR001",
+    "interface": "BE200"
+  },
+  {
+    "source": "MUMBMUMBISR001",
+    "target": "MUMBBIDCICR001",
+    "interface": "BE150"
+  },
+  {
+    "source": "MUMBMUMBISR001",
+    "target": "MUMBBIDCICR002",
+    "interface": "BE158"
+  },
+  {
+    "source": "MUMBMUMBISR001",
+    "target": "MUMBMUMBICR001",
+    "interface": "BE1"
+  },
+  {
+    "source": "MUMBMUMBISR001",
+    "target": "MUMBMUMBEUR001",
+    "interface": "Te0/9/0/7"
+  },
+  {
+    "source": "MUMBMUMBISR001",
+    "target": "NVMBNVMBICR001",
+
+    "interface": "BE40"
+  },
+  {
+    "source": "MUMBBIDCICR002",
+    "target": "MUMBBIDCICR001",
+    "interface": "BE250"
+  },
+  {
+    "source": "MUMBBIDCICR002",
+    "target": "MUMBMUMBICR001",
+    "interface": "BE156"
+  },
+  {
+    "source": "MUMBBIDCICR002",
+    "target": "MUMBMUMBISR001",
+    "interface": "BE158"
+  },
+  {
+    "source": "MUMBBIDCICR002",
+    "target": "NVMBNVMBICR001",
+    "interface": "BE200"
+  }
+]
