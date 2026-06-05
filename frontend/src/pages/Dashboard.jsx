@@ -7,6 +7,7 @@ import DiscoveryModal from "../components/DiscoveryModal";
 
 export default function Dashboard() {
   const [openDiscovery, setOpenDiscovery] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
   const [selectedLayer, setSelectedLayer] = useState({
     id: "L7", name: "L7 eNodeB / RAN", desc: "Radio access layer view"
   });
@@ -19,18 +20,18 @@ export default function Dashboard() {
       {/* MAIN AREA */}
       <div className="flex flex-col flex-1">
         {/* TOP HEADER */}
-        <Header openDiscovery={openDiscovery} setOpenDiscovery={setOpenDiscovery} />
+        <Header openDiscovery={openDiscovery} setOpenDiscovery={setOpenDiscovery} setSearchQuery={setSearchQuery} />
 
         {/* BODY */}
         <div className="flex flex-1">
           {/* Sidebar AREA */}
           <div className="w-[240px] border-r bg-white">
-            <Sidebar setSelectedLayer={setSelectedLayer} setSelectedProtocols={setSelectedProtocols} />
+            <Sidebar selectedLayer={selectedLayer} setSelectedLayer={setSelectedLayer} setSelectedProtocols={setSelectedProtocols} />
           </div>
 
           {/* GRAPH AREA */}
           {/* <div className="flex-1"> */}
-            <GraphPanel selectedLayer={selectedLayer} selectedProtocols={selectedProtocols}/>
+            <GraphPanel selectedLayer={selectedLayer} selectedProtocols={selectedProtocols} searchQuery={searchQuery}/>
           {/* </div> */}
         </div>
 

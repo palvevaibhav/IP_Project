@@ -6,6 +6,7 @@ import Dashboard from "./pages/Dashboard";
 import ProtectedRoute from "./routes/ProtectedRoute";
 import ShortestPathTool from "./components/ShortedPathTool";
 import TelecomTopology from "./components/TelecomTopology";
+import SignUp from "./pages/signup/SignUp";
 
 function App() {
   return (
@@ -14,6 +15,16 @@ function App() {
 
         {/* Login route */}
         <Route path="/" element={<Login />} />
+
+        {/* Sign Up route */}
+        <Route
+          path="/admin/sign-up"
+          element={
+            <ProtectedRoute>
+              <SignUp />
+            </ProtectedRoute>
+          }
+        />
 
         {/* Protected admin route */}
         <Route

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export default function Sidebar({ setSelectedLayer, setSelectedProtocols }) {
+export default function Sidebar({ setSelectedLayer, selectedLayer, setSelectedProtocols }) {
     const [open, setOpen] = useState(true);
 
     const layers = [
@@ -34,12 +34,12 @@ export default function Sidebar({ setSelectedLayer, setSelectedProtocols }) {
             <h2 className="font-bold text-blue-900 mb-4 text-capitalize">
                 LAYERS
             </h2>
-            <ul className="space-y-2 text-sm">
+            <ul className="space-y-2 text-sm text-bold">
                 {layers.map((layer) => (
                     <li
                         key={layer.name}
                         onClick={() => setSelectedLayer(layer)}
-                        className="cursor-pointer text-sm text-gray-600 hover:text-blue-900 hover:bg-gray-100 rounded"
+                        className={`cursor-pointer text-sm hover:text-blue-900 hover:bg-gray-100 rounded ${selectedLayer.id == layer.id ? "text-blue-900 text-bold": "text-gray-600"}`}
                     >
                         {layer.name}
                     </li>

@@ -1,11 +1,12 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
-function Login() {
-  const navigate = useNavigate();
+function SignUp() {
   const [initialFormData] = useState({
+    name:"",
     email: "",
-    password: ""
+    password: "",
+    confirm_password:""
   })
 
   const [errors, setErrors] = useState({})
@@ -28,12 +29,20 @@ function Login() {
   const validate = () => {
     const newErrors = {};
 
+    if (!formData.name.trim()) {
+      newErrors.name = "Name is required";
+    }
+
     if (!formData.email.trim()) {
-      newErrors.email = "Username or Email is required";
+      newErrors.email = "Email is required";
     }
 
     if (!formData.password.trim()) {
       newErrors.password = "Password is required";
+    }
+
+    if (!formData.confirm_password.trim()) {
+      newErrors.confirm_password = "Confirm Password is required";
     }
 
     setErrors(newErrors);
@@ -45,36 +54,53 @@ function Login() {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
   };
 
-  const isUsername = (value) => {
-    return /^[a-zA-Z0-9_]{3,20}$/.test(value);
-  };
-
   const validateEmail = (value) => {
     const newErrors = {};
-    if (!isEmail(value) && !isUsername(value)) {
-      newErrors.email = "Username or Email should be correct format!!"
+    if (!isEmail(value)) {
+      newErrors.email = "Email should be correct format!!"
     }
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
-  const handleLogin = (e) => {
+
+  const passwordMath = (password, confirm_password) => {
+    const newErrors = {};
+
+    if(password !== confirm_password){
+        newErrors.confirm_password = "Password does not match"
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  }
+
+  const handleReset = (e) => {
+    setFormData(initialFormData);
+    setErrors({})
+  }
+
+  const handleSignUp = (e) => {
     e.preventDefault();
 
     if (!validate()) {
-      return
+        return
     }
 
     if(!validateEmail(formData?.email)){
-      return
+        return
     }
 
+    if (!passwordMath(formData?.password, formData?.confirm_password)) {
+        return;
+    }
 
     // storage
+    localStorage.setItem("name", formData?.name)
     localStorage.setItem("email", formData?.email)
     localStorage.setItem("password", formData?.password)
-    localStorage.setItem("auth", "true");
-    navigate("/admin");
+    alert("SignUp Successfully")
+    setFormData(initialFormData)
   };
 
   console.log("formData: ", formData)
@@ -96,10 +122,28 @@ function Login() {
 
         {/* Form */}
         <form>
+          {/* Name */}
+          <div className="mb-4">
+            <label className="block text-sm font-semibold text-gray-700 mb-2">
+              Full Name
+            </label>
+            <input
+              type="name"
+              name="name"
+              onChange={handleChange}
+              placeholder="adf"
+              className="w-full h-11 px-3 border border-gray-300 rounded-lg outline-none focus:ring-2 focus:ring-blue-400"
+            />
+            {errors.name && (
+              <p className="text-red-500 text-sm mt-1">
+                {errors.name}
+              </p>
+            )}
+          </div>
           {/* Username */}
           <div className="mb-4">
             <label className="block text-sm font-semibold text-gray-700 mb-2">
-              Username
+              Email
             </label>
             <input
               type="email"
@@ -134,37 +178,47 @@ function Login() {
             )}
           </div>
 
+          {/* Confirm Password */}
+          <div className="mb-5">
+            <label className="block text-sm font-semibold text-gray-700 mb-2">
+              Confirm Password
+            </label>
+            <input
+              type="password"
+              name="confirm_password"
+              placeholder="••••••••"
+              onChange={handleChange}
+              className="w-full h-11 px-3 border border-gray-300 rounded-lg outline-none focus:ring-2 focus:ring-blue-400"
+            />
+            {errors.confirm_password && (
+              <p className="text-red-500 text-sm mt-1">
+                {errors.confirm_password}
+              </p>
+            )}
+          </div>
+
           {/* Button */}
+          <div className="w-full flex">
           <button
             type="submit"
-            className="w-full h-11 bg-blue-900 hover:bg-blue-800 text-white font-semibold rounded-lg transition"
-            onClick={handleLogin}
+            className="w-30 h-11 flex-1 mx-1 bg-blue-900 hover:bg-blue-800 text-white font-semibold rounded-lg transition"
+            onClick={handleSignUp}
           >
-            Sign in
+            Sign Up
           </button>
+          <button
+            type="reset"
+            className="w-30 h-11 flex-1 bg-orange-900 hover:bg-blue-800 text-white font-semibold rounded-lg transition"
+            onClick={handleReset}
+          >
+            Reset
+          </button>
+          </div>
 
         </form>
-
-        {/* Roles */}
-        <div className="mt-6 text-center">
-          <p className="text-xs text-gray-400 mb-3">
-            Role (demo)
-          </p>
-          <div className="flex justify-center gap-2">
-            <button className="px-4 py-1 text-xs border border-gray-300 rounded-full text-gray-500">
-              Viewer
-            </button>
-            <button className="px-4 py-1 text-xs rounded-full border border-blue-900 bg-blue-100 text-blue-900 font-semibold">
-              Operator
-            </button>
-            <button className="px-4 py-1 text-xs border border-gray-300 rounded-full text-gray-500">
-              Admin
-            </button>
-          </div>
-        </div>
       </div>
     </div>
   );
 }
 
-export default Login;
+export default SignUp

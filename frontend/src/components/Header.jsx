@@ -1,8 +1,9 @@
 import { useState } from "react";
 import ProfileDropdown from "./ProfileDropdown";
 import DiscoveryModal from "./DiscoveryModal";
+import SearchTop from "./SearchTop";
 
-export default function Header({ openDiscovery, setOpenDiscovery }) {
+export default function Header({ openDiscovery, setOpenDiscovery, setSearchQuery }) {
     const [notifications] = useState(3);
     return (
         <div className="h-14 bg-white border-b flex items-center justify-between px-4">
@@ -13,10 +14,7 @@ export default function Header({ openDiscovery, setOpenDiscovery }) {
             </div>
 
             {/* SEARCH */}
-            <input
-                placeholder="Search hostname or IP..."
-                className="w-[300px] border rounded-md px-3 py-1 text-sm"
-            />
+            <SearchTop setSearchQuery={setSearchQuery} />
 
             {/* RIGHT ACTIONS */}
             <div className="flex items-center gap-3">

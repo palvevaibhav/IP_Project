@@ -16,7 +16,6 @@ function InspectorRow({ label, value }) {
 }
 
 export default function Inspector({ selectedNode, handleExpand }) {
-    console.log("Selected node in inspector:", selectedNode);
     return (
         <div className="space-y-4 relative inset-0">
             <h2 className="p-4 font-bold text-blue-900 flex items-center border-b">
